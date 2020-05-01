@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JLPlayer - Reprodutor de vídeos</title>
+
+    <!-- Link style jlplayer.css -->
+    <link rel="stylesheet" href="jlplayer.css">
+
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+        }
+
+        .video-container {
+            width: 720px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <nav id='eps'>
+        <button id="ep1">Episod01</button>
+        <button id="ep2">Episod02</button>
+        <button id="ep3">Episod03</button>
+        <button id="ep4">Episod04</button>
+
+    </nav>
+
+    <div id="all">
+        <div class="f" id="ep1"><div class="video-container">
+
+            <!-- Chamar elemento vídeo com class jlplayer-video -->
+            <video preload="none" id='videoPlayer'
+                src="https://lh3.googleusercontent.com/8zQhFmHQwhQpcN6bV88QmRk1TU9ktBPCTspa1uS1NUpAWmjvdbDtodu6Chfd9fOYBJZybNm2mL1uwR6418tAx-O63BmanehU-bSKpBRFAS_pooRpKYac_mRaLyskJ-cACuDJOQ4eYwbmYg5yfScS2Zr1nkfdDQ9ZDkir3-AgZbfJuWy457C9a8kIoh-fywwX2e-bqz1b-wI9TzWbXywYyJA86pD_fNNmmIm7HHP3a_jsUaEWdjGMB6AipxPmU7D6SneF0QqO3mJTFg0vLyuCosNtZV49U6MPVhpbhrxoO52GIEGKHynt_3IJ18ACnrfirwz7zd3xLgVEOMGFmyQ10304jfHjFPzn8OGtuDEVpu2Flfuomu97vNQ4TR_SM0IOsLpKFJ-IZPFSVInOfhXl2BJXTK4M176MdF-U8JpOEqx6l3GXLHFacK-TAUylbWgu4e7aH5cYQ6hHCutKDPTIfn4v2Gcnqov7PQ8MG-fXchZx3qmXqhBCN_2moN2aoNKxns-cQGwkPN6yMERyIWs0qZL_CSWMNvD1GnIm5uIVuO-a3gdAW5KKmqKMdxgcVJBXpVp8f6HfJpXCiLZ--psRtwZZUmurVtnrxWQpyLwdEcch8rTMziTfpqhefQyGEi-KasxfeIqbyf34houOoUTGfRHvKY5EFGo=m22"
+                class="jlplayer-video">
+                <!-- <source id='mp4Source' src="https://lh3.googleusercontent.com/8zQhFmHQwhQpcN6bV88QmRk1TU9ktBPCTspa1uS1NUpAWmjvdbDtodu6Chfd9fOYBJZybNm2mL1uwR6418tAx-O63BmanehU-bSKpBRFAS_pooRpKYac_mRaLyskJ-cACuDJOQ4eYwbmYg5yfScS2Zr1nkfdDQ9ZDkir3-AgZbfJuWy457C9a8kIoh-fywwX2e-bqz1b-wI9TzWbXywYyJA86pD_fNNmmIm7HHP3a_jsUaEWdjGMB6AipxPmU7D6SneF0QqO3mJTFg0vLyuCosNtZV49U6MPVhpbhrxoO52GIEGKHynt_3IJ18ACnrfirwz7zd3xLgVEOMGFmyQ10304jfHjFPzn8OGtuDEVpu2Flfuomu97vNQ4TR_SM0IOsLpKFJ-IZPFSVInOfhXl2BJXTK4M176MdF-U8JpOEqx6l3GXLHFacK-TAUylbWgu4e7aH5cYQ6hHCutKDPTIfn4v2Gcnqov7PQ8MG-fXchZx3qmXqhBCN_2moN2aoNKxns-cQGwkPN6yMERyIWs0qZL_CSWMNvD1GnIm5uIVuO-a3gdAW5KKmqKMdxgcVJBXpVp8f6HfJpXCiLZ--psRtwZZUmurVtnrxWQpyLwdEcch8rTMziTfpqhefQyGEi-KasxfeIqbyf34houOoUTGfRHvKY5EFGo=m22" type="video/mp4" />-->
+                <!-- <track kind="captions" src="https://raw.githubusercontent.com/Kadrama/TesteLege/master/The%20Demon%20Master.EP01-ENG.srt" default>-->
+            </video>
+           
+        </div></div>
+        <div class="f" id="ep2"><div class="video-container">
+
+            <!-- Chamar elemento vídeo com class jlplayer-video -->
+            <video preload="none" id='videoPlayer'
+                src="https://lh3.googleusercontent.com/By9ZHllnbnIqSVGvoq8XJi5oI3AcHr0V8GIHnAmoH-iAIqsl1HPwMMa_clwumdjQFgxM2boGe_mOBIrHCLMAWA1H5mY1mNv8SPzlhaQZ_XjoptHn70rZJmq_7Szir8D1LcTgYN3AE8msddS0x2EqQGncnjZgRlZ22bV1Bwgf-M1UMnEhXpnEV7FyoPwNo9bPfLBwXjXU7ntunxRgPq1A0U5r0gHUNmc10fOVJT6DbtiArRzR2BoonBdXBp9cs9k4YuuAA4hz8YsFySnVYJk2GpaoKSeHEl5F4In2S-tEsWTgvJJp6OOeYnudmcC3pemj62tqgKnGXqxMAsYTXjXwHnultKrUJ1_bEzxfsDXP3d3H8gOFdE2FRav_91KdI8f4F6iSYIDcDBtKxmzzp57TGRjNznO9sRKfCrn4VPtcvEULSo0MrlZFn63QLWhIqRA8IwMCd4T_as0xiFW5PDsFqiwXnkuGuwc82M5Cjq9vIpJxzipAQXduERfXN63izLaOr2AXVoLXvCCLo17vlYU0X4KfbTjYKhuwxw69NbOd_yaF9GiojlUXreBG9FQVOVbe1nH6Rhaog2vvkpO6U5HlzNpgZ50nVcOPDneigusjFbzDUdkXGG_rrH6gIATpDig0mXMAEYtW5JMsjtizfUahTq-wBs5oo1MeskB4iV90owFv0iJofLpVrN0V_FYu=m22"
+                class="jlplayer-video">
+                <!-- <source id='mp4Source' src="https://lh3.googleusercontent.com/8zQhFmHQwhQpcN6bV88QmRk1TU9ktBPCTspa1uS1NUpAWmjvdbDtodu6Chfd9fOYBJZybNm2mL1uwR6418tAx-O63BmanehU-bSKpBRFAS_pooRpKYac_mRaLyskJ-cACuDJOQ4eYwbmYg5yfScS2Zr1nkfdDQ9ZDkir3-AgZbfJuWy457C9a8kIoh-fywwX2e-bqz1b-wI9TzWbXywYyJA86pD_fNNmmIm7HHP3a_jsUaEWdjGMB6AipxPmU7D6SneF0QqO3mJTFg0vLyuCosNtZV49U6MPVhpbhrxoO52GIEGKHynt_3IJ18ACnrfirwz7zd3xLgVEOMGFmyQ10304jfHjFPzn8OGtuDEVpu2Flfuomu97vNQ4TR_SM0IOsLpKFJ-IZPFSVInOfhXl2BJXTK4M176MdF-U8JpOEqx6l3GXLHFacK-TAUylbWgu4e7aH5cYQ6hHCutKDPTIfn4v2Gcnqov7PQ8MG-fXchZx3qmXqhBCN_2moN2aoNKxns-cQGwkPN6yMERyIWs0qZL_CSWMNvD1GnIm5uIVuO-a3gdAW5KKmqKMdxgcVJBXpVp8f6HfJpXCiLZ--psRtwZZUmurVtnrxWQpyLwdEcch8rTMziTfpqhefQyGEi-KasxfeIqbyf34houOoUTGfRHvKY5EFGo=m22" type="video/mp4" />-->
+                <!-- <track kind="captions" src="https://raw.githubusercontent.com/Kadrama/TesteLege/master/The%20Demon%20Master.EP01-ENG.srt" default>-->
+            </video>
+           
+        </div></div>
+        <div class="f" id="ep3">testando3</div>
+        <div class="f" id="ep4">testando4</div>
+    </div>
+
+
+    
+
+
+    <!--
+    <a href="javascript:void(0)" onclick="newep('1');">Episódio 02</a>
+    <a href="javascript:void(0)" onclick="newep('2');">Episódio 03</a>-->
+
+
+   
+
+    <script>
+
+        function vides(a, b, c, d) {
+
+            len = eps.childElementCount;
+
+            closeall();
+
+            for (i = 0; i < len; i++) {
+                eps.children[i].onclick = function () {
+                    closeall();
+                    all.children[this.id].style.display = "block";
+                }
+            }
+
+            function closeall() {
+                for (i = 0; i < all.childElementCount; i++) {
+                    all.children[i].style.display = "none"
+                }
+            }
+            eps.children[c].click();
+        }
+
+        vides("ep1,ep2,ep3,ep4")
+
+
+        var player = document.getElementById('videoPlayer');
+        //var mp4Vid = document.getElementById('mp4Source');
+        function newep(ep) {
+
+
+            switch (ep) {
+                case 2:
+                    player.src = "https://lh3.googleusercontent.com/By9ZHllnbnIqSVGvoq8XJi5oI3AcHr0V8GIHnAmoH-iAIqsl1HPwMMa_clwumdjQFgxM2boGe_mOBIrHCLMAWA1H5mY1mNv8SPzlhaQZ_XjoptHn70rZJmq_7Szir8D1LcTgYN3AE8msddS0x2EqQGncnjZgRlZ22bV1Bwgf-M1UMnEhXpnEV7FyoPwNo9bPfLBwXjXU7ntunxRgPq1A0U5r0gHUNmc10fOVJT6DbtiArRzR2BoonBdXBp9cs9k4YuuAA4hz8YsFySnVYJk2GpaoKSeHEl5F4In2S-tEsWTgvJJp6OOeYnudmcC3pemj62tqgKnGXqxMAsYTXjXwHnultKrUJ1_bEzxfsDXP3d3H8gOFdE2FRav_91KdI8f4F6iSYIDcDBtKxmzzp57TGRjNznO9sRKfCrn4VPtcvEULSo0MrlZFn63QLWhIqRA8IwMCd4T_as0xiFW5PDsFqiwXnkuGuwc82M5Cjq9vIpJxzipAQXduERfXN63izLaOr2AXVoLXvCCLo17vlYU0X4KfbTjYKhuwxw69NbOd_yaF9GiojlUXreBG9FQVOVbe1nH6Rhaog2vvkpO6U5HlzNpgZ50nVcOPDneigusjFbzDUdkXGG_rrH6gIATpDig0mXMAEYtW5JMsjtizfUahTq-wBs5oo1MeskB4iV90owFv0iJofLpVrN0V_FYu=m22";
+                    break;
+                case 3:
+                    player.src = "https://www.w3schools.com/tags/movie.ogg";
+                    break;
+            }
+
+            player.load();
+
+        };
+
+    </script>
+
+    <!--
+<iframe allowfullscreen="" frameborder="0" height="384" id="janela" name="janela" src=" " width="720"></iframe>
+
+OBS: Caso algum episódio não esteja pegando comente nos comentários abaixo! 
+ 
+        </div>-->
+
+
+    <!-- Inclusão jlplayer -->
+    <script src="jlplayer.js" async></script>
+
+</body>
+
+</html>
